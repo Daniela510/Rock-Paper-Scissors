@@ -11,41 +11,41 @@ function computerPlay() {
 
 function playRound(playerSelection, computerSelection) {
   // your code here!
-if (playerSelection == 'rock') {
+if (playerSelection == 'Rock') {
   switch (computerSelection) {
     case 'Scissors':
-      return `You lose! ${computerSelection} beats ${playerSelection}!`;
+      return `You win! ${playerSelection} beats ${computerSelection}!`;
       break;
     case 'Paper':
-      return `You win! ${playerSelection} beats ${computerSelection}!`;
+      return `You lose! ${computerSelection} beats ${playerSelection}!` ;
       break;
     case 'Rock':
       return `You tie! ${computerSelection} is ${playerSelection}`;
       break;
   }
-} else if (playerSelection == 'paper') {
+} else if (playerSelection == 'Paper') {
   switch (computerSelection) {
     case 'Scissors':
       return `You lose! ${computerSelection} beats ${playerSelection}!`;
       break;
     case 'Paper':
-      return `You win! ${playerSelection} beats ${computerSelection}!`;
+      return `You tie! ${computerSelection} is ${playerSelection}`;
       break;
     case 'Rock':
-      return `You tie! ${computerSelection} is ${playerSelection}`;
+      return `You win! ${playerSelection} beats ${computerSelection}!`;
       break;
   }
 
-} else if (playerSelection == 'scissors'){
+} else if (playerSelection == 'Scissors'){
   switch (computerSelection) {
     case 'Scissors':
-      return `You lose! ${computerSelection} beats ${playerSelection}!`;
+      return `You tie! ${computerSelection} is ${playerSelection}`;
       break;
     case 'Paper':
       return `You win! ${playerSelection} beats ${computerSelection}!`;
       break;
     case 'Rock':
-      return `You tie! ${computerSelection} is ${playerSelection}`;
+      return `You lose! ${computerSelection} beats ${playerSelection}!`;
       break;
   }
 
@@ -65,7 +65,7 @@ playerSelection = outcomes[i];}
 }
 
 
-console.log(playRound(playerSelection, computerSelection));
+ console.log(playRound(playerSelection, computerSelection));
 
 
 
