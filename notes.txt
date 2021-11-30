@@ -1,0 +1,14 @@
+const input = prompt("Rock, paper or scissors?");
+
+if(input.toUpperCase() === outcomes[1].toUpperCase()) {
+playerSelection = 
+} else if(input.toUpperCase() === outcomes[2].toUpperCase()){
+playerSelection =
+} else if(input.toUpperCase() === outcomes[3].toUpperCase()){
+playerSelection =
+}
+
+for (let i = 0; i < outcomes.length; i++) {
+  if(input.toUpperCase() === outcomes[i].toUpperCase()) {
+playerSelection = outcomes[i];}
+}
